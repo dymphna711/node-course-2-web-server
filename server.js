@@ -62,6 +62,15 @@ app.get('/about', (req, res) =>{
        
     })
 })
+
+app.get('/projects', (req, res) =>{
+    //res.send('<h2>About Page</h2>')
+    res.render('projects.hbs', {
+       pageTitle: 'Projects Page',
+        description: 'listing of projects'    
+       
+    })
+})
 app.get('/contact', (req, res) =>{
     res.send('<h2>Contact Us</h2>')
 })
